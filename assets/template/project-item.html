@@ -1,0 +1,14 @@
+<template class="task-template">
+    <script id="project-item-template" type="text/template">
+        <li class="ui-border-b" data-src="<%=project.src%>" data-dist="<%=project.dist%>" data-thumb="<%=project.thumb%>">
+            <div class="folder-thumb"><img src="<%=project.thumb%>"/></div>
+            <div class="ui-list-info">
+                <h4 class="ui-nowrap"><%=project.src%></h4>
+                <p class="ui-nowrap folder-dist">→ <%=project.dist%></p>
+            </div>
+            <button class="ladda-button" data-size="s" data-color="blue" data-style="zoom-in"><span class="ladda-label">开始转换</span></button>
+            <!-- <svg class="icon-expand"><use xlink:href="#icon-expand"></use></svg> -->
+            <div class="mod-progress"><div>
+        </li>
+    </script>
+</template>

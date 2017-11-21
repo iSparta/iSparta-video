@@ -1,0 +1,192 @@
+html,body {
+  height:100%;
+  overflow:hidden;
+  background-color:#f1f1f1;
+}
+.page-index{
+  height:100%;
+}
+
+
+.mod-upload{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack:center;
+  margin:0 auto;
+  margin-top:50vh;
+  transform: translateY(-50%);
+  width:80%;
+  height:60%;
+  border:2px currentcolor dashed;
+  border-radius:3%;
+  color:#ccc;
+  font-size:24px;
+  text-align:center;
+  cursor:pointer;
+  opacity:.8;
+}
+.mod-upload:hover{
+  color:#999;
+}
+
+.icon-upload{
+  fill:currentcolor;
+}
+
+#page-main {
+  position:relative;
+}
+#page-main .folder-list {
+  position: relative;
+  z-index: 1;
+}
+#page-main .folder-list li {
+  margin-left: 0;
+}
+#page-main .folder-list li.hover {
+  background-color:#f9f9f9;
+}
+#page-main .folder-list li.current {
+  background-color:#e7edf3;
+}
+#page-main .ui-btn {
+  cursor: pointer;
+}
+#page-main .ui-list-info {
+  padding-right: 120px;
+}
+#page-main .folder-thumb {
+  position: relative;
+  margin: 15px 10px 15px 15px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/folder.png) no-repeat 0 0;
+  background-size: 50px auto;
+}
+#page-main .folder-thumb img{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-40%);
+  width: 50%;
+}
+#page-main .folder-dist {
+  font-size: 16px;
+  color: #00a5e0;
+  cursor: pointer;
+  display: inline-block;
+}
+#page-main .folder-dist:hover {
+  text-decoration: underline;
+}
+.page-index .side-bar {
+  position: absolute;
+  width:250px;
+  top: 0;
+  right: 0%;
+  bottom: 0;
+  background:#fff;
+  z-index:9;
+  border-left:1px solid #eaeaea;
+  transform: translate(250px,0);
+  transition: all 0.3s ease;
+}
+
+.sidebar-show .ladda-button{
+  transform: translate(-250px,0);
+}
+.sidebar-show .icon-expand{
+  transform: translate(-250px,0);
+}
+.sidebar-show .side-bar{
+  transform: translate(0px,0);
+}
+
+.side-bar h2{
+  text-align:center;
+  line-height: 80px;
+  font-size:18px;
+}
+.side-bar .cont{
+  margin:0 20px;
+  border-top:1px solid #ececec;
+  color:#999;
+}
+.side-bar dt{
+  margin:20px 0 5px 0;
+  color:#333;
+}
+.side-bar dd{
+  font-size:14px;
+}
+.side-bar input{
+  color:#333;
+  line-height:24px;
+  text-align:center;
+  margin:0 5px 0 0;
+}
+.side-bar .ipt1{
+  width:50px;
+}
+.side-bar .ipt2{
+  width:50px;
+}
+.side-bar .ipt3{
+  width:50px;
+}
+.side-bar .ipt4{
+  margin-right:0;
+}
+.ladda-button{
+  position: absolute;
+  top: 50%;
+  right:20px;
+  margin-top: -18px;
+}
+
+.mod-progress{
+  position: absolute;
+  left:0;
+  bottom:0;
+  height:2px;
+  display:none;
+  width:0%;
+  background:#53b5e6;
+  transition: width .2s linear;
+}
+
+
+.icon-expand{
+  position: absolute;
+  top: 50%;
+  right:20px;
+  margin-top: -14px;
+  width:28px;
+  height:28px;
+  fill:#53b5e6;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.icon-expand:hover{
+  fill:#69bfe9;
+}
+
+.ui-radio{
+  color:#333;
+}
+.ui-radio input{
+  width:18px;
+  height:18px;
+  margin-left:2px;
+}
+.ui-radio input:before{
+  width:16px;
+  height:16px;
+}
+.ui-radio input:checked:after{
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  left: 4px;
+  top: 4px;
+}

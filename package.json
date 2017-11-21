@@ -1,0 +1,35 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "converter sequence frame to video",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-packager . convert --overwrite --platform=win32 --arch=ia32 --icon=assets/icon/AppIcon.ico --ignore=assets/tools/mac --ignore=node_modules/electron-* --ignore=node_modules/.bin",
+    "build-mac": "electron-packager . convert --overwrite --platform=darwin --arch=x64 --icon=assets/icon/AppIcon.icns --ignore=assets/tools/win  --ignore=node_modules/electron-* --ignore=node_modules/.bin",
+    "rebuild": "electron-rebuild -f -w sharp"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "converter"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^1.4.1",
+    "electron-packager": "^8.5.2",
+    "electron-rebuild": "^1.5.7",
+    "electron-winstaller": "^2.6.3"
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "ejs": "^2.5.6",
+    "fix-path": "^2.1.0",
+    "glob": "^7.1.1",
+    "i18next": "^8.4.3",
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3"
+  }
+}

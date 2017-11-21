@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/_frozenui/full.css">
+    <link rel="stylesheet" href="../css/ladda/ladda.min.css">
+    <link rel="stylesheet" href="../css/ladda/ladda-themeless.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="import" href="../template/project-item.html">
+</head>
+<body id="body">
+    <!-- <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+      <symbol id="icon-expand" viewBox="0 0 1024 1024">
+        <path d="M65.389266 269.517363l560.545646 0 0 69.346391-560.545646 0 0-69.346391Z"></path>
+        <path d="M65.389266 269.517363l560.545646 0 0 69.346391-560.545646 0 0-69.346391Z"></path>
+        <path d="M65.389266 475.650117l560.545646 0 0 69.346391-560.545646 0 0-69.346391Z"></path>
+        <path d="M65.389266 475.650117l560.545646 0 0 69.346391-560.545646 0 0-69.346391Z"></path>
+        <path d="M65.389266 681.783895l560.545646 0 0 69.345368-560.545646 0 0-69.345368Z"></path>
+        <path d="M65.389266 681.783895l560.545646 0 0 69.345368-560.545646 0 0-69.345368Z"></path>
+        <path d="M744.972029 636.063597 957.343881 513.451048 744.972029 390.838499Z"></path>
+      </symbol>
+    </svg> -->
+    <div class="mod-upload" id="select-folder">
+      <svg  class="icon-upload" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2990" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80">
+          <path d="M895.850146 890.805073 128.099902 890.805073c-27.648 0-50.076098-22.478049-50.076098-50.176L78.023805 589.749073c0-27.697951 22.403122-50.200976 50.076098-50.200976 27.648 0 50.051122 22.478049 50.051122 50.200976l0 200.704 667.623024 0 0-200.704c0-27.697951 22.378146-50.200976 50.051122-50.200976s50.101073 22.478049 50.101073 50.200976l0 250.88C945.95122 868.327024 923.523122 890.805073 895.850146 890.805073zM662.203317 355.577756c-14.785561 0-28.04761-6.393756-37.213659-16.60878l0 0-62.938537-70.081561 0 304.103024 0 0c0 27.697951-22.428098 50.176-50.051122 50.176-27.672976 0-50.076098-22.453073-50.076098-50.176l0 0L461.923902 268.91239l-62.938537 70.081561 0 0c-9.166049 10.215024-22.428098 16.60878-37.238634 16.60878-27.623024 0-50.076098-22.453073-50.076098-50.151024 0-12.91239 4.870244-24.675902 12.862439-33.56722l0 0 150.203317-167.261659 0 0c9.191024-10.190049 22.428098-16.60878 37.238634-16.60878 14.760585 0 28.072585 6.393756 37.213659 16.60878l0 0 150.228293 167.261659 0 0c7.96722 8.891317 12.862439 20.654829 12.862439 33.56722C712.279415 333.124683 689.851317 355.577756 662.203317 355.577756z" p-id="2991"></path>
+      </svg>
+        <p>Drop your folder here!</p>
+    </div>
+    <div class="page-index"  style="display:none">
+        <section class="section" id="page-main">
+            <div class="folder-list">
+                <ul class="ui-list ui-list-function" id="folder-ul">
+                    <!-- <li class="ui-border-b" data-src="/SVN/gamecenter/electron/test" data-dist="/SVN/gamecenter/electron/test/temp">
+                        <div class="folder-thumb"></div>
+                        <div class="ui-list-info">
+                            <h4 class="ui-nowrap">/SVN/gamecenter/electron/test</h4>
+                            <p class="ui-nowrap folder-dist">→ /SVN/gamecenter/test/temp</p>
+                        </div>
+                        <button class="ladda-button" type="submit" data-size="s" data-color="blue" data-style="zoom-in"><span class="ladda-label">开始转换</span></button>
+                        <svg class="icon-expand"><use xlink:href="#icon-expand"></use></svg>
+                        <div class="mod-progress"><div>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+        <div class="side-bar">
+            <h2>输出设置</h2>
+            <div class="cont">
+              <dl>
+                  <dt>帧率：</dt>
+                  <dd><input id="val-fps" class="ipt1" type="text" value="14"/>fps</dd>
+                  <dt>码率：</dt>
+                  <dd><input id="val-kpbs" class="ipt3" type="text" value="3000"/>k</dd>
+                  <dt><label class="ui-checkbox-s"><input id="val-16x" class="ipt4" type="checkbox" name="multiple" value="1" checked>16倍数输出</lable></dt>
+                  <dt>视频拼接方式：</dt>
+                  <dd><label class="ui-radio"><input type="radio" name="direction" checked value="auto">自动根据宽高比拼接</label></dd>
+                  <dd><label class="ui-radio"><input type="radio" name="direction" value="row">左右拼接</label></dd>
+                  <dd><label class="ui-radio"><input type="radio" name="direction"  value="column">上下拼接</label></dd>
+              </dl>
+            </div>
+        </div>
+
+    </div>
+    <script src="../css/ladda/spin.min.js"></script>
+    <script src="../css/ladda/ladda.min.js"></script>
+    <script src="../js/imports.js"></script>
+    <script src="../../renderer-process/file.js"></script>
+    <script src="../../renderer-process/convert.js"></script>
+</body>
+</html>
