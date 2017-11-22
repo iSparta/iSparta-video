@@ -1,6 +1,6 @@
-## converter 
+## iSparta-video
 
-converter 是一款PNG序列帧转换成透明视频素材的工具。
+iSparta-video是一款PNG序列帧转换成透明视频素材的工具。
 
 # 截图
 
@@ -9,7 +9,7 @@ converter 是一款PNG序列帧转换成透明视频素材的工具。
 
 # 下载
 
-iSparta现在支持macOS、Windows。你可以在[Release](https://github.com/iSparta/video/releases)页面下载使用。
+iSparta-video现在支持macOS、Windows。你可以在[Release](https://github.com/iSparta/video/releases)页面下载使用。
 
 # 使用
 
